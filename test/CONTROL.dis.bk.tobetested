@@ -1,0 +1,31 @@
+25 12 01 13 0			#STARTING YEAR MONTH DAY HOUR MINUTES
+1				#NUMBER OF SOURCE LOCATIONS
+39.027719 -105.117188 50		#SOURCE 1 LATITUDE LONGITUDE HEIGHT(m-agl)
+-12				#TOTAL RUN TIME (backwards)
+0				#USE MODEL VERTICAL VELOCITY
+10000                #TOP OF MODEL DOMAIN (m-AGL)
+1                #NUMBER nextfile mfile OF INPUT DATA GRIDS
+/workspaces/hysplit-test/programfiles/metfiles/
+20251201_gfs0p25
+1				#NUMBER OF DIFFERENT POLLUTANTS
+Unit				#POLLUTANT IDENTIFICATION
+0				#EMISSION RATE (per hour)
+0.0 				#HOURS OF EMISSION
+00 00 00 00 0 			#RELEASE START TIME:YEAR MONTH DAY HOUR MINUTE
+1                           #NUMBER OF CONCENTRATION GRIDS
+0 0                         #CONC GRID CENTER LATITUDE LONGITUDE
+0.005 0.005 #CONC GRID SPACING (degrees) LATITUDE LONGITUDE
+0.8 0.8                             #CONC GRID SPAN (degrees) LATITUDE LONGITUDE
+/workspaces/hysplit-test/programfiles/output/
+bwCdump1
+1                             #NUMBER OF VERTICAL CONCENTRATION LEVELS
+100                         #HEIGHT OF EACH CONCENTRATION LEVEL (m-agl)
+25 12 01 13 0               #SAMPLING START TIME:YEAR MONTH DAY HOUR MINUTE
+00 00 00 12 00                       #SAMPLING STOP TIME:YEAR MONTH DAY HOUR MINUTE
+0 1 0                     #SAMPLING INTERVAL: TYPE HOUR MINUTE
+1                           #NUMBER OF DEPOSITING POLLUTANTS
+0.0 0.0 0.0                     #PARTICLE:DIAMETER (um), DENSITY (g/cc), SHAPE
+0.0 0.0 0.0 0.0 0.0               #DEP VEL (m/s), MW (g/Mole), SFC REACT. RATIO, DIFFUSIVITY RATIO, HENRY'S CONSTANT
+0.0 0.0 0.0            #WET REMOVAL: HENRY'S (Molar/atm), IN-CLOUD (1/s), BELOW-CLOUD (1/s)
+0                           #RADIOACTIVE DECAY HALF-LIFE (days)
+0.0                         #POLLUTANT RESUSPENSION (1/m)

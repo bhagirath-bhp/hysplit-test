@@ -1,0 +1,37 @@
+# --- Cycle 1: High-Rate SOX from S1 (2 hours duration)
+2025 12 01 12 02 4         # Cycle Header: Start 12:00, 2 hr duration, 4 records
+
+# Record 1: Pollutant 1 (SOX) at Source 1 (ACTIVE)
+2025 12 01 12 00 0200 40.10 -100.10 50.0 2000.0 0.0 0.0
+# Record 2: Pollutant 2 (NOX) at Source 1 (INACTIVE)
+2025 12 01 12 00 0200 40.10 -100.10 50.0 0.0 0.0 0.0
+# Record 3: Pollutant 1 (SOX) at Source 2 (INACTIVE)
+2025 12 01 12 00 0200 39.90 -99.90 20.0 0.0 0.0 0.0
+# Record 4: Pollutant 2 (NOX) at Source 2 (INACTIVE)
+2025 12 01 12 00 0200 39.90 -99.90 20.0 0.0 0.0 0.0
+
+
+# --- Cycle 2: Medium-Rate NOX from S2 (3 hours duration)
+2025 12 01 15 03 4         # Cycle Header: Start 15:00, 3 hr duration, 4 records
+
+# Record 1: Pollutant 1 (SOX) at Source 1 (INACTIVE)
+2025 12 01 15 00 0300 40.10 -100.10 50.0 0.0 0.0 0.0
+# Record 2: Pollutant 2 (NOX) at Source 1 (INACTIVE)
+2025 12 01 15 00 0300 40.10 -100.10 50.0 0.0 0.0 0.0
+# Record 3: Pollutant 1 (SOX) at Source 2 (INACTIVE)
+2025 12 01 15 00 0300 39.90 -99.90 20.0 0.0 0.0 0.0
+# Record 4: Pollutant 2 (NOX) at Source 2 (ACTIVE)
+2025 12 01 15 00 0300 39.90 -99.90 20.0 500.0 0.0 0.0
+
+
+# --- Cycle 3: Low-Rate SOX from S1 (2 hours duration)
+2025 12 01 20 02 4         # Cycle Header: Start 20:00, 2 hr duration, 4 records
+
+# Record 1: Pollutant 1 (SOX) at Source 1 (ACTIVE)
+2025 12 01 20 00 0200 40.10 -100.10 50.0 100.0 0.0 0.0
+# Record 2: Pollutant 2 (NOX) at Source 1 (INACTIVE)
+2025 12 01 20 00 0200 40.10 -100.10 50.0 0.0 0.0 0.0
+# Record 3: Pollutant 1 (SOX) at Source 2 (INACTIVE)
+2025 12 01 20 00 0200 39.90 -99.90 20.0 0.0 0.0 0.0
+# Record 4: Pollutant 2 (NOX) at Source 2 (INACTIVE)
+2025 12 01 20 00 0200 39.90 -99.90 20.0 0.0 0.0 0.0
