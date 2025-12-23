@@ -1,0 +1,49 @@
+{
+  "jobId": "Sim1_Conc_Fwd",
+  "simulationMeta": {
+    "modelType": "CONCENTRATION",
+    "direction": "FORWARD",
+    "startEpochUTC": 1764547200,
+    "endEpochUTC": 1764619200,
+    "outputFile": {
+      "directory": "/workspaces/hysplit-test/programfiles/output",
+      "fileName": "sim1_cdump"
+    }
+  },
+  "metFiles": [
+    {
+      "directory": "/workspaces/hysplit-test/programfiles/metfiles/",
+      "fileName": "20251201_gfs0p25"
+    }
+  ],
+  "physicsConfig": {
+    "verticalMotionCode": 0,
+    "topOfModelMAgl": 10000.0
+  },
+  "points": [
+    {
+      "pointId": 1,
+      "latitude": 40.0,
+      "longitude": -90.0,
+      "heightMAgl": 100.0
+    }
+  ],
+  "pollutantMatrixConfig": {
+    "sox": {
+      "pollutantId": "sox",
+      "initialMassG": 10000.0
+    },
+    "isEmissionRateZero": false
+  },
+  "concentrationGrids": [
+    {
+      "centerLat": 40.0,
+      "centerLon": -90.0,
+      "spacingLat": 0.1,
+      "spacingLon": 0.1,
+      "spanLat": 50,
+      "spanLon": 50,
+      "outputLevelsMAgl": [100]
+    }
+  ]
+}
